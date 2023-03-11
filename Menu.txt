@@ -1,8 +1,8 @@
 Lütfen pizza tabanı seçiniz :
-1: Classic
-2: Margherita
-3: TurkPizza
-4: PlainPizza
+1: Margherita
+2: TurkPizza
+3: PlainPizza
+4:Salami
 * ve sos seçimi:
 11: Olives
 12: Mushrooms
