@@ -156,7 +156,7 @@ def main():
     totali=sos.get_cost() # sos ve pizza ücretlerini Topladağımız.
     acikalama =sos.get_description()#sos ve pizza açıklamlarını birleştiren kısım.
 
-    print(acikalama)
+
 
     print("Ödeme İşlemleri için Bilgiler girmeniz gerekmektedir")
 
@@ -169,7 +169,7 @@ def main():
         musteriBilgi = csv.writer(database)
         musteriBilgi.writerow(([isim, kimlikNo, krediKartNo, krediKartSifre, acikalama, zaman,totali]))
 
-if __name__ == '__main__': #Programaı çalıştırmamızı sağlayan
+if __name__ == '__main__': #Programı çalıştırmamızı sağlayan kısım
     main()
 
 
