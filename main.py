@@ -158,18 +158,20 @@ def main():
 
 
 
-    print("Ödeme İşlemleri için Bilgiler girmeniz gerekmektedir")
+    print("Ödeme İşlemleri için Bilgiler Girmeniz gerekmektedir")
 
     isim = input("Lütfen İsiminizi Giriniz:")
     kimlikNo = input("Lütfen Kimlik Numaranızı Giriniz")
     krediKartNo = input("Lütfen Kredi Kartı Numaranızı Giriniz")
     krediKartSifre = input("Lütfen Şifrenizi Giriniz")
-    zaman = datetime.datetime.now() #İşlem zamanını veritabanı yazdırmamızı sağlayacak
-    with open("OrderDatabes.csv", "w", newline='', encoding="UTF-8") as database:#Veri tabanını programa okutup yazdırmamızı sağlayan metod
+    zaman = datetime.datetime.now() #İşlem zamanını veritabanı yazdırırken kullnacağımız değişken .
+    with open("OrderDatabes.csv", "a", newline='', encoding="UTF-8") as database:#Veri tabanını programa okutup bilgileri yazdırmamızı sağlayan kısımlar
+
         musteriBilgi = csv.writer(database)
         musteriBilgi.writerow(([isim, kimlikNo, krediKartNo, krediKartSifre, acikalama, zaman,totali]))
+    print("İşlemler Başarılı Afiyet Olsun... \nBizi Tercih Ettiğiniz İçin Teşekkürler... ")
 
-if __name__ == '__main__': #Programı çalıştırmamızı sağlayan kısım
+if __name__ == '__main__': #Programı çalıştırmamızı sağlayam ve main fonksiyonumu çağırarak işlemleri başlatan kısım
     main()
 
 
