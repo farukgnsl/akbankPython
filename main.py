@@ -18,7 +18,7 @@ class Pizza:
 #Ana klasımız olan Pizza klasının subclası olan bu classlar çeşitli pizza tabanlarının açıklamlarını ve ücretlerini oluşturmaktadır.
 class Margarita(Pizza):
     def __init__(self):
-        super().__init__("Özenle Seçilmiş Kaşar peynrleri", 60) #Super fonksiyonu ile subclassımızda Pizza klasımızın özelliklerini kullanmış oluyoruz
+        super().__init__("Özenle Seçilmiş Kaşar peynrleri ile süslenmiş pizza", 60) #Super fonksiyonu ile subclassımızda Pizza klasımızın özelliklerini kullanmış oluyoruz
 
 
 
@@ -67,7 +67,7 @@ class Mushrooms(Decarator):
 class GoatCheese(Decarator):
     def __init__(self,component):
 
-        super().__init__(component,"Özel keçi peyniri lezzetini pizzada yaşayaın",20)
+        super().__init__(component,"Özel keçi peyniri lezzetini pizzada yaşayın",20)
 
 
 
@@ -153,7 +153,7 @@ def main():
             kontrolSos(sosSecim)
 
 
-    totali=sos.get_cost() # sos ve pizza ücretlerini Topladağımız.
+    total=sos.get_cost() # sos ve pizza ücretlerini Topladağımız.
     acikalama =sos.get_description()#sos ve pizza açıklamlarını birleştiren kısım.
 
 
@@ -168,7 +168,7 @@ def main():
     with open("OrderDatabes.csv", "a", newline='', encoding="UTF-8") as database:#Veri tabanını programa okutup bilgileri yazdırmamızı sağlayan kısımlar
 
         musteriBilgi = csv.writer(database)
-        musteriBilgi.writerow(([isim, kimlikNo, krediKartNo, krediKartSifre, acikalama, zaman,totali]))
+        musteriBilgi.writerow(([isim, kimlikNo, krediKartNo, krediKartSifre, acikalama, zaman,total]))
     print("İşlemler Başarılı Afiyet Olsun... \nBizi Tercih Ettiğiniz İçin Teşekkürler... ")
 
 if __name__ == '__main__': #Programı çalıştırmamızı sağlayam ve main fonksiyonumu çağırarak işlemleri başlatan kısım
