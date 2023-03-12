@@ -171,7 +171,7 @@ def main():
         musteriBilgi.writerow(([isim, kimlikNo, krediKartNo, krediKartSifre, acikalama, zaman,total]))
     print("İşlemler Başarılı Afiyet Olsun... \nBizi Tercih Ettiğiniz İçin Teşekkürler... ")
 
-if __name__ == '__main__': #Programı çalıştırmamızı sağlayam ve main fonksiyonumu çağırarak işlemleri başlatan kısım
+if __name__ == '__main__': #Programı çalıştırmamızı sağlayan ve main fonksiyonumu çağırarak işlemleri başlatan kısım
     main()
 
 
