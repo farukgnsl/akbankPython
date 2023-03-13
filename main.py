@@ -99,7 +99,7 @@ def kontrolPizza(a):
 #Sos seçiminde menüye uygun değer girilidiğini kontrol etmemizi sağlayan fonksiyon
 def kontrolSos(b):
     if b not in ["11", "12", "13", "14",
-                 "15", "16", "17"]:
+                 "15", "16"]:
         print("Hatalı Sos Seçimi Yaptınız")
     else:
         pass
